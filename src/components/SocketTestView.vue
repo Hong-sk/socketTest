@@ -77,8 +77,11 @@ const message = ref('');
 const messages = reactive([]);
 const route = useRoute();
 
-const { roomId } = route.params;
-const { nickname } = route.query;
+// const { roomId } = route.params;
+// const { nickname } = route.query;
+
+const roomId = 'roomId'
+const nickname = 'mike'
 
 const checkToken = () => {
   // 토큰 검증
