@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import SocketTestView from "@/components/SocketTestView.vue";
+import SocketTestTwo from "@/components/socketTestTwo.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,6 +9,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: SocketTestView
+    },
+    {
+      path: '/test',
+      name: 'test',
+      component: SocketTestTwo
     },
     {
       path: '/about',
